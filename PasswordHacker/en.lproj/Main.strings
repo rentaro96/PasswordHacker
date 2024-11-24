@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; configuration.title = "Start"; ObjectID = "OMm-CX-k9I"; */
+"OMm-CX-k9I.configuration.title" = "Start";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OMm-CX-k9I"; */
+"OMm-CX-k9I.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "doe-LW-T4L"; */
+"doe-LW-T4L.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "mlh-Lq-p75"; */
+"mlh-Lq-p75.text" = "0";
+
+/* Class = "UILabel"; text = "スタートボタンを押して解析開始"; ObjectID = "ngj-Id-BX5"; */
+"ngj-Id-BX5.text" = "スタートボタンを押して解析開始";
+
+/* Class = "UIButton"; configuration.title = "Reset"; ObjectID = "ovY-qw-63q"; */
+"ovY-qw-63q.configuration.title" = "Reset";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ovY-qw-63q"; */
+"ovY-qw-63q.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ruA-Yf-DS2"; */
+"ruA-Yf-DS2.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "s9E-iZ-p5X"; */
+"s9E-iZ-p5X.text" = "0";

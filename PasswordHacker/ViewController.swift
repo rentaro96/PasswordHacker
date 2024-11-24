@@ -13,10 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet var resultLabel2: UILabel!
     @IBOutlet var resultLabel3: UILabel!
     @IBOutlet var resultLabel4: UILabel!
+    @IBOutlet var resultLabel5: UILabel!
     
     @IBOutlet var countLabel: UILabel!
     
-    var password = Int.random(in: 0000...1200)
+    var password = Int.random(in: 00000...99999)
     
     
 
@@ -29,15 +30,15 @@ class ViewController: UIViewController {
     
     
     @IBAction func start() {
-        for i in 0...9999 {
+        for i in 0...99999 {
             
-            //RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.0005))
+            RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.00005))
             print(i)
             //countLabel.text = String(i)
-            countLabel.text = "レンだよ"
+            countLabel.text = "解析完了"
             if i == password {
                 var digits = [Int]()
-                for _ in 0...3 {
+                for _ in 0...4 {
                     digits.append(password % 10 )
                     password = password / 10
                     
@@ -46,20 +47,42 @@ class ViewController: UIViewController {
                 resultLabel2.text = String(digits[1])
                 resultLabel3.text = String(digits[2])
                 resultLabel4.text = String(digits[3])
-            
+                resultLabel5.text = String(digits[4])
+                
                 
                 
             }
+            let alert: UIAlertController = UIAlertController(title: "解析完了", message: "パスワードの解析が完了しました",preferredStyle: .alert)
+            
+            alert.addAction(
+                UIAlertAction(title: "OK",
+                              style: .default,
+                              handler: { action in
+                                  self.navigationController?.popViewController(animated: true)
+                                  
+                              })
+                )
+                present(alert,animated: true,completion: nil)
+                
+           
+            
+       
         }
+        
+        
+        
+       
+            
         
     }
     @IBAction func reset() {
-        password = Int.random(in: 0000...1200)
+        password = Int.random(in: 00000...99999)
         countLabel.text = "「Start」ボタンを押して解析開始"
         resultLabel1.text = "0"
         resultLabel2.text = "0"
         resultLabel3.text = "0"
         resultLabel4.text = "0"
+        resultLabel5.text = "0"
         print(password)
         
     }
