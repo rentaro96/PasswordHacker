@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     @IBAction func start() {
         for i in 0...99999 {
             
-            RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.00005))
+            //RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.00005))
             print(i)
             //countLabel.text = String(i)
             countLabel.text = "解析完了"
@@ -52,22 +52,19 @@ class ViewController: UIViewController {
                 
                 
             }
-            let alert: UIAlertController = UIAlertController(title: "解析完了", message: "パスワードの解析が完了しました",preferredStyle: .alert)
             
-            alert.addAction(
-                UIAlertAction(title: "OK",
-                              style: .default,
-                              handler: { action in
-                                  self.navigationController?.popViewController(animated: true)
-                                  
-                              })
-                )
-                present(alert,animated: true,completion: nil)
-                
-           
-            
-       
         }
+        let alert: UIAlertController = UIAlertController(title: "解析完了", message: "パスワードの解析が完了しました",preferredStyle: .alert)
+        
+        alert.addAction(
+            UIAlertAction(title: "OK",
+                          style: .default,
+                          handler: { action in
+                              self.navigationController?.popViewController(animated: true)
+                              
+                          })
+            )
+            present(alert,animated: true,completion: nil)
         
         
         
